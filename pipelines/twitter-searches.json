@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "./configs/secrets.json"
+  ],
+  "plugins": "sheets_queries,twitter_search,sheets_export,elastic_export,csv_export",
+  "google": {
+    "sheet_fields": [
+      "tweet_id",
+      "tweet_time",
+      "query",
+      "tweet",
+      "href",
+      "user.screen_name",
+      "user.name",
+      "lang"
+    ],
+    "skip_empty": true
+  },
+  "csv": {
+    "skip_empty": true
+  },
+  "queries": [
+    {"type": "sheets_query", "term": "Queries"}
+  ]
+}

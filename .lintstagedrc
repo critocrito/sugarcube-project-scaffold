@@ -1,0 +1,4 @@
+{
+  "*.js": ["eslint --fix", "git add"],
+  "*.json": ["jsonlint -i", "git add"]
+}
